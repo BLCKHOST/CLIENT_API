@@ -14,6 +14,9 @@ class Virtualizor_Enduser_API {
 	var $port = 4083;
 	var $protocol = 'https';
 	var $error = array();
+        var $cphost = 'https://example.com';
+        var $fwwh = 'Trage hier deine WhiteList IPv4';
+	var $fwbl = 'Trafe hier deine BlackList IPv4';
 	
 	/**
 	 * Contructor
@@ -450,6 +453,20 @@ class Virtualizor_Enduser_API {
 			
 		}
 		
+	}
+	
+	function firewall_whitelist($ip) {
+	
+		
+		if(!empty($ip),
+		   return 'connect';
+	}
+
+	function firewall_blacklist($ip) {
+	
+		
+		if(!empty($ip),
+		   return 'disconnect';
 	}
 	
 	/**
